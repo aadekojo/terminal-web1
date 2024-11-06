@@ -2,15 +2,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const commandInput = document.getElementById('command-input');
     const outputDiv = document.querySelector('.output');
   
-      // Check if elements are correctly selected
-  console.log("commandInput:", commandInput);
-  console.log("outputDiv:", outputDiv);
-  
     // Commands dictionary
     const commands = {
-      help: "Available commands: <br> - help: Show available commands<br> - about: About me<br> - clear: Clear the terminal",
+      help: "Available commands: <br> - help: Show available commands<br> - about: About me <br> - clear: Clear the terminal <br> projects: Check out my projects<br>",
       about: "Adekojo Abimbola is an IT Operations Specialist and System Administrator.",
-      clear: "clear"
+      clear: "clear",
+      projects: "Currently still constructiing and learning or on Github"
     };
   
     // Handle user input
