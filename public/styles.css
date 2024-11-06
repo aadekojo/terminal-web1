@@ -1,0 +1,120 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1d1f21;
+  color: #8aff9e;
+  font-family: 'Courier New', Courier, monospace;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.terminal {
+  position: absolute;
+  top: 20px;     /* Distance from the top */
+  left: 20px;    /* Distance from the left */
+  width: calc(100% - 40px); /* Adjusts to window width with a small margin */
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.header {
+  color: #8aff9e;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.ascii-art {
+  color: #00ff8e;
+  font-size: 0.8em;
+  line-height: 1.2em;
+  text-align: center;
+  margin-bottom: 15px;
+  white-space: pre-wrap;
+}
+
+.welcome-message {
+  font-size: 1em;
+  color: #a0522d;
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.command-line {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1.1em;
+  color: #8aff9e;
+}
+
+.user {
+  color: #8aff9e;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.command {
+  color: #ffffff;
+}
+
+/* Input Cursor Effect */
+.input {
+  display: inline-block;
+  border-right: 2px solid #8aff9e;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: #8aff9e;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Output Message Styling */
+p {
+  font-size: 1em;
+  color: #f5deb3;
+  margin: 5px 0;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d1f21;
+}
+
+
+#command-input {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  width: 100%;
+}
+
+.output {
+  font-size: 1em;
+  color: #f5deb3;
+  margin-bottom: 10px;
+}
