@@ -32,12 +32,14 @@ To run this project locally, follow these steps:
 ```bash
 git clone https://github.com/aadekojo/terminal-website.git
 
+```
 ### 2. Install Dependecies
 
 ```bash
 cd terminal-website
 npm install
-
+```
 ### 3. Start the server
+```bash
 npm start
-
+```
